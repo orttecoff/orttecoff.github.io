@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat Global</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="client.js"></script>
+  <style>
+    /* Fallback very small CSS in case external CSS fails */
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="title">Chat Global</div>
+      <div id="nameDisplay" class="name-display"></div>
+      <div id="status" class="status" aria-live="polite"></div>
+    </div>
+    <div id="messages" class="messages" aria-label="Mensajes"></div>
+    <form id="chat-form" class="input-area" autocomplete="off">
+      <input id="input" placeholder="Escribe un mensaje... (emojis permitidos)" />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
